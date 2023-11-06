@@ -1,0 +1,101 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .card {
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        height: 80%;
+    }
+    .responsive{
+    display: block;
+     }
+    }
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .card {
+        width: 100%;
+    }
+    img{
+        width: 50%;
+    }
+    .responsive{
+    display: block;
+     }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .card {
+        width: 80%;
+    }
+    .responsive{
+    display: block;
+     }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card {
+        width: 40%;
+    }
+    .responsive{
+        display: inline;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .card {
+        width: 40%;
+    }
+    .responsive{
+        display: inline;
+    }
+}
+
+.color-white {
+    color: white;
+}
+
+/* .nav-link {
+    color: white !important;
+} */
+
+strong{
+    font-weight: 500;
+}
+.para{
+    padding-top: 35px; padding-bottom: 35px; font-size: larger;
+}
+.body-div {
+    padding: 25px;
+}
+
+
+.collapse.navbar-collapse {
+    padding-right: 80px;
+}
+
+.table-of-contents {
+    border: 1px solid black;
+    padding: 25px;
+}
+.footer {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding: 15px;
+}
+.body-header {
+    font-size: 2rem;
+}
+
+.body-subheader {
+    font-size: 23px
+}

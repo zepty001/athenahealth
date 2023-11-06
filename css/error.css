@@ -1,0 +1,44 @@
+.alert-danger{
+text-align: center;
+}
+
+.center{
+    margin-top:10%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.fa-exclamation-triangle{
+    font-size: 5em;
+    color:rgb(197, 54, 54);
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color:red;
+}
+h2{ 
+    padding: 10px;
+    text-align: center;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding: 15px;
+}
+
+
+span{
+    color:blue;
+    display: inline-block;
+}
+
+btn{
+    
+    margin-left:50%;
+}
