@@ -1,0 +1,74 @@
+#exitpopup {
+	text-align: center;
+	width: 80%;
+	height: 80%;
+	margin: 0px auto;
+	display: none;
+	position: fixed;
+	color: #ffffff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	z-index: 999999;
+	background: rgb(20, 20, 20);
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#exitpopup .animatedbutton {
+	margin-top: 2%;
+}
+
+#exitpopup h1 {
+	margin-top: 20%;
+	padding-top: 0px;
+}
+
+#exitpopup p {
+	text-align: left;
+}
+
+#exitpopup img {
+	width: 400px;
+	border: 0px;
+	margin: 0px auto;
+}
+
+.quiz-button {
+    background-color: #99cc33;
+    border-color: #99cc33;
+    background-image: -webkit-linear-gradient(top, #99cc33 0%, #99cc33 100%);
+    background-image: -o-linear-gradient(top, #99cc33 0%, #99cc33 100%);
+    background-image: linear-gradient(to bottom, #99cc33 0%, #99cc33 100%);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FFFEA338', endColorstr='#FFEB7A1A', GradientType=0);
+    border: 0 !important;
+    animation: pulse infinite 2s ease-in-out;
+    transition: all 0.3s ease-in;
+}
+
+a.btn.quiz-button {
+    padding: 45px 250px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 45px;
+    text-transform: uppercase;
+    line-height: 35px;
+    font-weight: 600;
+    color: #fff !important;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
+}
+
+.quiz-button:hover,
+.quiz-button:active {
+    background-color: #0277BD !important;
+    color: #fff !important;
+    border: 0 !important;
+}

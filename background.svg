@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="414px" height="488px" viewBox="0 0 414 488" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>wavy shape</title>
+    <defs>
+        <linearGradient x1="78.3245143%" y1="71.4052611%" x2="39.2163012%" y2="8.73714399%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#5AAFBC" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Phase-1-GA,-2FA-Widget" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2FA,-default" transform="translate(0.000000, -715.000000)" fill="url(#linearGradient-1)">
+            <g id="Footer" transform="translate(0.000000, 715.000000)">
+                <path d="M0,0 C22.0250281,6.98232911 37.4787983,13.2763024 46.3613105,18.88192 C64.1836774,30.1293431 78.4566455,45.8906347 97.058437,55.9555774 C122.452305,69.6955349 148.891885,75.5691156 177.806113,77.9060844 C224.87988,81.7107831 300.135867,71.3381318 338.007393,112.142323 C365.896333,142.190904 362.297192,168.76944 365.944098,208.351301 C367.334058,223.437304 374.197578,242.43351 380.079332,254.990278 C385.391396,266.330831 396.989414,282.37595 406.745389,290.78271 C408.801123,292.554144 411.885993,295.21256 416,298.757959 L416,491.173295 L1.61287226,493 L0,0 Z" id="wavy-shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

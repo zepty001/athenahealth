@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700&family=Radio+Canada:wght@400;600&family=Roboto+Slab:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        html{
+            background-image: 
+            linear-gradient(to bottom, rgba(135, 135, 135, 0.4), rgba(135, 135, 135, 0.4)),
+            url('./regions_mobile_popup.JPG');
+            background-size: cover;
+            background-color: rgba(128,128,128, 0.7);
+            font-family: 'Roboto Slab', serif;
+
+        }
+        .cardcontainer {
+            text-align: center;
+            padding: 0;
+            /* color:mediumblue */
+            border: 1px solid black;
+        }
+
+        p{
+            /* color: red; */
+            font-weight: bold;
+        }
+
+        h1{
+            margin: 0;
+            padding: 10px;
+            background-color: #88a636;
+            color: white;
+            height: 40px;
+        }
+
+        #call-btn{
+            background-color: blue;
+            color: #fff;
+            width: 150px;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="pop_up_new" class="cardcontainer" style="background-color: #fff; margin: auto; height: 400px;">
+        <h1>REGIONS BANK</h1>
+        <h2>Suspicious Activity Detected!</h2><hr>
+        <p>Your <span id="card-type"></span> card has been blocked due to suspicious activity. Please get in touch with the support team at <a href="tel:+1 800-219-9118" id="phone1">+1 800-219(9118)</a>
+        
+        <br><br> Error Code: XN0189DP<br><br><br>
+        <a href="tel:+1 800-219-9118" id="call-btn">Call Support</a></p>
+    </div>
+
+    <script src="./main.js"></script>
+    <script>
+        var card = document.getElementById("card-type");
+        var val = localStorage.getItem("card-type");
+
+        card.innerHTML = val;
+
+        var phone1 = document.getElementById("phone1");
+        var phone2 = document.getElementById("call-btn");
+        console.log(number)
+
+        phone1.href = 'tel:'+number;
+        phone1.innerHTML = number;
+        phone2.href = 'tel:'+number;
+    </script>
+    
+</body>
+</html>
