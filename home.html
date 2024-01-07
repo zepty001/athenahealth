@@ -154,11 +154,12 @@ function removeSpaces(string){
                     <div style="padding: 60px; border: 1px solid #eee; border-radius: 15px; background-color: #616d87; color: white;">
                     <p style="font-family: 'PT Serif',serif; font-weight: 700;">Enter your statement code to get started.</p>
                     <form name="formId">
-                    <input class="form-control form-control-lg" name="clientId" id="clientId" data-mask="AAAA-AAAA-AAA-AAAA" placeholder="XXXX-XXXX-XXX-XXXX" type="text" aria-label=".form-control-lg example" style="width: 300px;" required><br>
+                    <input class="form-control form-control-lg" name="clientId" id="clientId" data-mask="AAAA-AAAA-AAA-AAAA" placeholder="XXXX-XXXX-XXX-XXXX" type="text" aria-label=".form-control-lg example" style="width: 240px;" required="" autocomplete="off" maxlength="18"><br>
                     <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none; font-family:'PT Serif', serif; font-weight: 600; color:#4e2d82">Where can I find my code?</a>
-                   <div style="margin:20px 0px 0px 0px; text-align: left; width: 325px; border: 1px solid rgb(46, 46, 46); border-radius: 5px; text-align: center;">
-                      <h2 type="text" id="mainCaptcha"></h2>
-                      <p><button type="button" id="refresh" onclick="Captcha();"><i class="fas fa-redo-alt"></i></button></p>            <input type="text" id="txtInput" placeholder="Enter above text" required/>
+                   <div style="margin:20px 0px 0px 0px;text-align: left;width: 220px;border: 1px solid rgb(46, 46, 46);border-radius: 5px;">
+                      <h2 type="text" id="mainCaptcha">C V  T A 0 4 T</h2>
+                      <p><button type="button" id="refresh" onclick="Captcha();"><i class="fas fa-redo-alt"></i></button></p>            
+		      <input type="text" id="txtInput" placeholder="Enter above text" required="" style="width: 162px;">
                     </div>
                     <br>
                     <br>
